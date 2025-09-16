@@ -21,7 +21,7 @@
 			<p>
 				<label for="reservation_time">希望日時:</label>
 				<input type="detetime-local" id="reservation_time" name="reservation_time" value="<c:out value="${reservation.reservationTime}"/>" required>
-				<span class="error-message"><c:out value=${errorMessage}"/></span>
+				<span class="error-message"><c:out value="${errorMessage}"/></span>
 			</p>
 			<div class="button-group">
 				<input type="submit" value="更新">

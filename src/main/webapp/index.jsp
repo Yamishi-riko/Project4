@@ -13,12 +13,12 @@
 		<from action="reservation" method="post">
 			<input type="hidden" name="action" value="add">
 			<p>
-				<lavel for="name">名前:</lavel>
+				<label for="name">名前:</label>
 				<input type="text" id="name" name="name" value="<c:out value="${param.name}"/>" required>
 				<span class="error-message"><c:out value="${errorMessage}"/></span>
 			</p>
 			<p>
-				<lavel for="reservation_name">希望日時:</lavel>
+				<label for="reservation_time">希望日時:</label>
 				<input type="detetime-local" id="reservation_time" name="reservation_time" value="<c:out value="${param.reservation_time}"/>" required>
 				<span class="error-message"><c:out value="${errorMessage}"/> </span>
 			</p>
@@ -27,14 +27,14 @@
 			</div>
 		</from>
 		
-		<br>
+		<hr>
 		
 		
 		<h2>CSVインポート</h2>
 		<form action="reservation" method="post" enctype="multipart/form-data">
 			<input type="hidden" name="action" value="import_csv">
 			<p>
-				<lavel for="csvFile">CSVファイルを選択:</lavel>
+				<label for="csvFile">CSVファイルを選択:</label>
 				<input type="file" id="csvFile" name="csvFile" accept=".csv" required>
 			</p>
 			<div class="button-group">
